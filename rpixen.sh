@@ -53,7 +53,7 @@ VARIANT=dom0
 
 BUILD_ARCH=$ARCH_CFG
 
-sudo apt install device-tree-compiler tftpd-hpa flex bison qemu-utils kpartx git curl qemu-user-static binfmt-support parted bc libncurses5-dev libssl-dev pkg-config python acpica-tools u-boot-tools
+sudo apt install device-tree-compiler tftpd-hpa flex bison qemu-utils kpartx git curl qemu-user-static binfmt-support parted bc libncurses5-dev libssl-dev pkg-config acpica-tools u-boot-tools uuid-dev libgnutls28-dev python3-dev
 
 source ${SCRIPTDIR}toolchain-aarch64-linux-gnu.sh
 
@@ -193,6 +193,9 @@ if [ -d /media/${USER}/boot/ ]; then
 fi
 
 sync
+
+
+read -p "bootfiles was copied. Press enter to continue"
 
 MNTRAMDISK=/mnt/dom0_ramdisk/
 MNTROOTFS=/mnt/dom0_rpi-arm64-rootfs/
