@@ -194,9 +194,6 @@ fi
 
 sync
 
-
-read -p "bootfiles was copied. Press enter to continue"
-
 MNTRAMDISK=/mnt/dom0_ramdisk/
 MNTROOTFS=/mnt/dom0_rpi-arm64-rootfs/
 MNTBOOT=${MNTROOTFS}boot/
