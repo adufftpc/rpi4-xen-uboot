@@ -53,7 +53,7 @@ VARIANT=dom0
 
 BUILD_ARCH=$ARCH_CFG
 
-sudo apt install device-tree-compiler tftpd-hpa flex bison qemu-utils kpartx git curl qemu-user-static binfmt-support parted bc libncurses5-dev libssl-dev pkg-config acpica-tools u-boot-tools uuid-dev libgnutls28-dev python3-dev
+sudo apt install device-tree-compiler tftpd-hpa flex bison qemu-utils kpartx git curl qemu-user-static binfmt-support parted bc libncurses5-dev libssl-dev pkg-config acpica-tools u-boot-tools uuid-dev libgnutls28-dev python3-dev gettext python-is-python3
 
 source ${SCRIPTDIR}toolchain-aarch64-linux-gnu.sh
 
