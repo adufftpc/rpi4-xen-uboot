@@ -63,7 +63,7 @@ sudo apt install device-tree-compiler tftpd-hpa flex bison qemu-utils kpartx git
 
 source ${SCRIPTDIR}toolchain-aarch64-linux-gnu.sh
 
-ROOTFS=${VARIANT}-ubuntu-base-18.04.3-base-${BUILD_ARCH}-prepped.tar.gz
+ROOTFS=${VARIANT}-ubuntu-base-18.04.5-base-${BUILD_ARCH}-prepped.tar.gz
 if [ ! -s ${ROOTFS} ]; then
     ./ubuntu-base-prep.sh ${ROOTFS} ${MNTRAMDISK} ${BUILD_ARCH}  ${DNS_SERVER} ${PROXY_CFG} 
 fi
